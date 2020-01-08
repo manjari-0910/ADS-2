@@ -1,6 +1,8 @@
 import java.io.*;
 import java.util.Scanner;
 public class wordnet{
+    private static final String V ;
+
     public void parseHypernyms() throws FileNotFoundException {
         File file = new File("C:\\Users\\Manjari Murala\\Desktop\\ADS-2\\Day-1\\hypernyms.txt"); 
         Scanner s = new Scanner(file);
@@ -18,6 +20,8 @@ public class wordnet{
             System.out.println(arr[0]);
         } 
     }
+    
+
     public static void main(String[] args) throws FileNotFoundException {
         wordnet w = new wordnet();
         w.parseHypernyms();
